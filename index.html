@@ -456,223 +456,123 @@
     </section>
 
     <!-- Form Section -->
-<!-- Form Section -->
-<!-- Form Section -->
-<section id="form-conversion" class="py-24 bg-gradient-to-br from-gray-900 to-black">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="card-modern bg-gray-800/50 rounded-3xl p-8 lg:p-12">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-4 text-white">Análise Jurídica Gratuita em 24H</h2>
-                <p class="text-gray-400 text-lg">
-                    Descubra se você tem direito e qual a melhor estratégia para seu caso específico
-                </p>
+    <section id="form-conversion" class="py-24 bg-gradient-to-br from-gray-900 to-black">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="card-modern bg-gray-800/50 rounded-3xl p-8 lg:p-12">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4 text-white">Análise Jurídica Gratuita em 24H</h2>
+                    <p class="text-gray-400 text-lg">
+                        Descubra se você tem direito e qual a melhor estratégia para seu caso específico
+                    </p>
+                </div>
+                
+                <form id="lead-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-3">Nome Completo *</label>
+                            <input type="text" name="nome" required 
+                                   class="w-full px-4 py-4 bg-gray-700/50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition duration-300"
+                                   placeholder="Seu nome completo">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-3">Email *</label>
+                            <input type="email" name="email" required 
+                                   class="w-full px-4 py-4 bg-gray-700/50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition duration-300"
+                                   placeholder="seu@email.com">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-3">WhatsApp *</label>
+                            <input type="tel" name="whatsapp" required 
+                                   class="w-full px-4 py-4 bg-gray-700/50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition duration-300"
+                                   placeholder="(11) 99999-9999">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-3">Situação *</label>
+                            <select name="situacao" required
+                                    class="w-full px-4 py-4 bg-gray-700/50 border border-gray-600 rounded-xl text-white focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition duration-300">
+                                <option value="">Selecione sua situação</option>
+                                <option value="filho">Filho</option>
+                                <option value="neto">Neto</option>
+                                <option value="bisneto">Bisneto</option>
+                                <option value="trisneto">Trisneto</option>
+                                <option value="pentaneto">Pentaneto</option>
+                                <option value="casado-italiano">Casado com italiano</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-3">Região do Antepassado</label>
+                            <select name="regiao" 
+                                    class="w-full px-4 py-4 bg-gray-700/50 border border-gray-600 rounded-xl text-white focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition duration-300">
+                                <option value="">Selecione se souber</option>
+                                <option value="veneto">Vêneto</option>
+                                <option value="lombardia">Lombardia</option>
+                                <option value="campania">Campânia</option>
+                                <option value="sicilia">Sicília</option>
+                                <option value="calabria">Calábria</option>
+                                <option value="outra">Outra região</option>
+                                <option value="nao-sei">Não sei</option>
+                            </select>
+                        </div>
+                        <div></div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-3">Qual sua principal dúvida?</label>
+                        <textarea name="duvida" rows="4" 
+                                  class="w-full px-4 py-4 bg-gray-700/50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition duration-300" 
+                                  placeholder="Ex: Tenho medo do Decreto Tajani afetar meu processo..."></textarea>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary text-white font-bold py-4 px-12 rounded-full text-lg shadow-2xl pulse-glow">
+                            Receber Análise Gratuita Agora
+                        </button>
+                        <div class="mt-6 flex items-center justify-center space-x-8 text-sm text-gray-400">
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                24 horas
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                Sem compromisso
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                100% seguro
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                
+                <div id="success-message" class="hidden mt-8 card-modern bg-green-500/10 border border-green-500/30 rounded-2xl p-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-green-400 mb-4">Solicitação Enviada com Sucesso!</h3>
+                        <p class="text-green-300 text-lg">
+                            Você receberá sua análise jurídica gratuita em até 24 horas no email informado.
+                        </p>
+                    </div>
+                </div>
             </div>
-
-            <!-- Formulário funcional com Mailchimp -->
-            <form 
-                action="https://github.us14.list-manage.com/subscribe/post?u=7669fd74779669a094f5cc8c9&amp;id=24c9c5f08d&amp;f_id=00afbfe5f0" 
-                method="post"
-                id="mc-embedded-subscribe-form"
-                name="mc-embedded-subscribe-form"
-                class="space-y-6"
-                target="_blank"
-            >
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-300 mb-3">Nome Completo *</label>
-                        <input 
-                            type="text" 
-                            name="FNAME" 
-                            required 
-                            class="w-full px-4 py-4 bg-gray-700/50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition duration-300"
-                            placeholder="Seu nome"
-                        >
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-300 mb-3">Sobrenome *</label>
-                        <input 
-                            type="text" 
-                            name="LNAME" 
-                            required 
-                            class="w-full px-4 py-4 bg-gray-700/50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition duration-300"
-                            placeholder="Seu sobrenome"
-                        >
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-300 mb-3">Email *</label>
-                        <input 
-                            type="email" 
-                            name="EMAIL" 
-                            required 
-                            class="w-full px-4 py-4 bg-gray-700/50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition duration-300"
-                            placeholder="seu@email.com"
-                        >
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-300 mb-3">WhatsApp *</label>
-                        <input 
-                            type="tel" 
-                            name="PHONE" 
-                            required 
-                            class="w-full px-4 py-4 bg-gray-700/50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition duration-300"
-                            placeholder="(11) 99999-9999"
-                        >
-                    </div>
-                </div>
-
-                <!-- Situação -->
-                <div>
-                    <label class="block text-sm font-medium text-gray-300 mb-3">Situação *</label>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                        <label class="inline-flex items-center">
-                            <input type="radio" name="MMERGE6" value="Filho" required class="sr-only peer">
-                            <div class="w-full p-3 text-center bg-gray-700/50 border border-gray-600 rounded-lg peer-checked:bg-orange-500/20 peer-checked:border-orange-500 text-white cursor-pointer">
-                                Filho
-                            </div>
-                        </label>
-                        <label class="inline-flex items-center">
-                            <input type="radio" name="MMERGE6" value="Neto" class="sr-only peer">
-                            <div class="w-full p-3 text-center bg-gray-700/50 border border-gray-600 rounded-lg peer-checked:bg-orange-500/20 peer-checked:border-orange-500 text-white cursor-pointer">
-                                Neto
-                            </div>
-                        </label>
-                        <label class="inline-flex items-center">
-                            <input type="radio" name="MMERGE6" value="Bisneto" class="sr-only peer">
-                            <div class="w-full p-3 text-center bg-gray-700/50 border border-gray-600 rounded-lg peer-checked:bg-orange-500/20 peer-checked:border-orange-500 text-white cursor-pointer">
-                                Bisneto
-                            </div>
-                        </label>
-                        <label class="inline-flex items-center">
-                            <input type="radio" name="MMERGE6" value="Trisneto" class="sr-only peer">
-                            <div class="w-full p-3 text-center bg-gray-700/50 border border-gray-600 rounded-lg peer-checked:bg-orange-500/20 peer-checked:border-orange-500 text-white cursor-pointer">
-                                Trisneto
-                            </div>
-                        </label>
-                    </div>
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-3">
-                        <label class="inline-flex items-center">
-                            <input type="radio" name="MMERGE6" value="Pentaneto" class="sr-only peer">
-                            <div class="w-full p-3 text-center bg-gray-700/50 border border-gray-600 rounded-lg peer-checked:bg-orange-500/20 peer-checked:border-orange-500 text-white cursor-pointer">
-                                Pentaneto
-                            </div>
-                        </label>
-                        <label class="inline-flex items-center">
-                            <input type="radio" name="MMERGE6" value="Casado com Italiano (a)" class="sr-only peer">
-                            <div class="w-full p-3 text-center bg-gray-700/50 border border-gray-600 rounded-lg peer-checked:bg-orange-500/20 peer-checked:border-orange-500 text-white cursor-pointer">
-                                Casado(a)
-                            </div>
-                        </label>
-                        <label class="inline-flex items-center">
-                            <input type="radio" name="MMERGE6" value="Outro" class="sr-only peer">
-                            <div class="w-full p-3 text-center bg-gray-700/50 border border-gray-600 rounded-lg peer-checked:bg-orange-500/20 peer-checked:border-orange-500 text-white cursor-pointer">
-                                Outro
-                            </div>
-                        </label>
-                    </div>
-                </div>
-
-                <!-- Região -->
-                <div>
-                    <label class="block text-sm font-medium text-gray-300 mb-3">Região do Antepassado</label>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                        <label class="inline-flex items-center">
-                            <input type="radio" name="MMERGE7" value="Vêneto" class="sr-only peer">
-                            <div class="w-full p-3 text-center bg-gray-700/50 border border-gray-600 rounded-lg peer-checked:bg-purple-500/20 peer-checked:border-purple-500 text-white cursor-pointer">
-                                Vêneto
-                            </div>
-                        </label>
-                        <label class="inline-flex items-center">
-                            <input type="radio" name="MMERGE7" value="Lombardia" class="sr-only peer">
-                            <div class="w-full p-3 text-center bg-gray-700/50 border border-gray-600 rounded-lg peer-checked:bg-purple-500/20 peer-checked:border-purple-500 text-white cursor-pointer">
-                                Lombardia
-                            </div>
-                        </label>
-                        <label class="inline-flex items-center">
-                            <input type="radio" name="MMERGE7" value="Campânia" class="sr-only peer">
-                            <div class="w-full p-3 text-center bg-gray-700/50 border border-gray-600 rounded-lg peer-checked:bg-purple-500/20 peer-checked:border-purple-500 text-white cursor-pointer">
-                                Campânia
-                            </div>
-                        </label>
-                        <label class="inline-flex items-center">
-                            <input type="radio" name="MMERGE7" value="Sicília" class="sr-only peer">
-                            <div class="w-full p-3 text-center bg-gray-700/50 border border-gray-600 rounded-lg peer-checked:bg-purple-500/20 peer-checked:border-purple-500 text-white cursor-pointer">
-                                Sicília
-                            </div>
-                        </label>
-                    </div>
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-3">
-                        <label class="inline-flex items-center">
-                            <input type="radio" name="MMERGE7" value="Calábria" class="sr-only peer">
-                            <div class="w-full p-3 text-center bg-gray-700/50 border border-gray-600 rounded-lg peer-checked:bg-purple-500/20 peer-checked:border-purple-500 text-white cursor-pointer">
-                                Calábria
-                            </div>
-                        </label>
-                        <label class="inline-flex items-center">
-                            <input type="radio" name="MMERGE7" value="Outra região" class="sr-only peer">
-                            <div class="w-full p-3 text-center bg-gray-700/50 border border-gray-600 rounded-lg peer-checked:bg-purple-500/20 peer-checked:border-purple-500 text-white cursor-pointer">
-                                Outra
-                            </div>
-                        </label>
-                        <label class="inline-flex items-center">
-                            <input type="radio" name="MMERGE7" value="Não sei" class="sr-only peer">
-                            <div class="w-full p-3 text-center bg-gray-700/50 border border-gray-600 rounded-lg peer-checked:bg-purple-500/20 peer-checked:border-purple-500 text-white cursor-pointer">
-                                Não sei
-                            </div>
-                        </label>
-                    </div>
-                </div>
-
-                <!-- Dúvida (campo extra - não salva no Mailchimp, mas aparece no e-mail) -->
-                <div>
-                    <label class="block text-sm font-medium text-gray-300 mb-3">Qual sua principal dúvida?</label>
-                    <textarea 
-                        name="MMERGE8" 
-                        rows="4" 
-                        class="w-full px-4 py-4 bg-gray-700/50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 transition duration-300" 
-                        placeholder="Ex: Tenho medo do Decreto Tajani afetar meu processo..."
-                    ></textarea>
-                </div>
-
-                <!-- Campo oculto anti-spam (NÃO REMOVA!) -->
-                <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                    <input type="text" name="b_7669fd74779669a094f5cc8c9_24c9c5f08d" tabindex="-1" value="">
-                </div>
-
-                <div class="text-center">
-                    <button 
-                        type="submit" 
-                        name="subscribe"
-                        class="btn-primary text-white font-bold py-4 px-12 rounded-full text-lg shadow-2xl pulse-glow"
-                    >
-                        Receber Análise Gratuita Agora
-                    </button>
-                    <div class="mt-6 flex items-center justify-center space-x-8 text-sm text-gray-400">
-                        <div class="flex items-center">
-                            <svg class="w-4 h-4 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            24 horas
-                        </div>
-                        <div class="flex items-center">
-                            <svg class="w-4 h-4 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            Sem compromisso
-                        </div>
-                        <div class="flex items-center">
-                            <svg class="w-4 h-4 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                            </svg>
-                            100% seguro
-                        </div>
-                    </div>
-                </div>
-            </form>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-black border-t border-gray-800 py-16">
@@ -729,6 +629,9 @@
         </div>
     </footer>
 
+    <!-- Mailchimp Integration Script -->
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/7669fd74779669a094f5cc8c9/b9a6e975ac3a533c133274ab9.js");</script>
+
     <script>
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -764,7 +667,7 @@
             lastScrollTop = scrollTop;
         });
 
-        // Form submission with enhanced UX
+        // Form submission with Mailchimp integration
         document.getElementById('lead-form').addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -775,22 +678,71 @@
             submitBtn.textContent = 'Enviando...';
             submitBtn.disabled = true;
             
-            // Simulate form submission
-            setTimeout(() => {
-                const formData = new FormData(this);
-                const data = Object.fromEntries(formData);
-                console.log('Form submitted:', data);
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Mailchimp integration
+            const mailchimpData = {
+                email_address: data.email,
+                status: 'subscribed',
+                merge_fields: {
+                    FNAME: data.nome.split(' ')[0], // Primeiro nome
+                    LNAME: data.nome.split(' ').slice(1).join(' '), // Sobrenome
+                    PHONE: data.whatsapp,
+                    SITUACAO: data.situacao,
+                    REGIAO: data.regiao || 'Não informado',
+                    DUVIDA: data.duvida || 'Não informado'
+                }
+            };
+            
+            // Substitua pelos seus dados do Mailchimp
+            const MAILCHIMP_URL = 'https://SEUDOMINIO.us1.list-manage.com/subscribe/post-json';
+            const LIST_ID = 'SEU_LIST_ID';
+            const API_KEY = 'SUA_API_KEY';
+            
+            // Envio para Mailchimp usando JSONP (para evitar CORS)
+            const script = document.createElement('script');
+            const callbackName = 'mailchimpCallback' + Date.now();
+            
+            window[callbackName] = function(response) {
+                document.head.removeChild(script);
+                delete window[callbackName];
                 
-                // Hide form and show success message
-                this.style.display = 'none';
-                document.getElementById('success-message').classList.remove('hidden');
-                
-                // Scroll to success message
-                document.getElementById('success-message').scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'center'
-                });
-            }, 1500);
+                if (response.result === 'success') {
+                    // Sucesso
+                    document.getElementById('lead-form').style.display = 'none';
+                    document.getElementById('success-message').classList.remove('hidden');
+                    
+                    // Scroll to success message
+                    document.getElementById('success-message').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                } else {
+                    // Erro
+                    console.error('Erro Mailchimp:', response.msg);
+                    alert('Erro ao enviar. Tente novamente.');
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }
+            };
+            
+            // Construir URL com parâmetros
+            const params = new URLSearchParams({
+                u: 'SEU_USER_ID', // Encontre no URL do formulário embed
+                id: LIST_ID,
+                EMAIL: data.email,
+                FNAME: data.nome.split(' ')[0],
+                LNAME: data.nome.split(' ').slice(1).join(' '),
+                PHONE: data.whatsapp,
+                SITUACAO: data.situacao,
+                REGIAO: data.regiao || '',
+                DUVIDA: data.duvida || '',
+                c: callbackName
+            });
+            
+            script.src = `${MAILCHIMP_URL}?${params.toString()}`;
+            document.head.appendChild(script);
         });
 
         // Enhanced fade in animation on scroll
@@ -826,5 +778,6 @@
             });
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98622a30f151ea61',t:'MTc1OTA1MTIyNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98630c2945caa258',t:'MTc1OTA2MDQ4MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+
